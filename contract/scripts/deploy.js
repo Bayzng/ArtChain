@@ -7,8 +7,7 @@ async function main() {
 
   // Deploy the contract
   const ArtChain = await hre.ethers.getContractFactory("ArtChain");
-  const artChain = await ArtChain.deploy(); // No parameters needed
-
+  const artChain = await ArtChain.deploy(); 
   await artChain.deployed();
   console.log("ArtChain deployed to:", artChain.address);
 }

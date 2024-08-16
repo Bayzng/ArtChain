@@ -4,10 +4,7 @@ import Navbar from '../../components/Navbar/Navbar';
 import Hero from '../../components/Hero/Hero';
 import Networks from '../../components/Networks/Networks';
 import Trade from '../../components/Trade/Trade';
-import CanvasAnimation from '../../components/Canvas/CanvasAnimation';
-import ArtContent from '../../components/ArtContent/ArtContent';
 import Creator from '../../components/Creator/Creator';
-import Newsletter from '../../components/Newsletter/Newsletter';
 import Footer from '../../components/Footer/Footer';
 import Trending from '../../components/Trending/Trending';
 
@@ -30,7 +27,7 @@ const Home = () => {
     canvas2.height = 100;
     const half = canvas2.width / 2;
     const gradient2 = ctx2.createRadialGradient(half, half, 0, half, half, half);
-    gradient2.addColorStop(0.025, '#fff'); // Changed color to white
+    gradient2.addColorStop(0.025, '#fff'); 
     gradient2.addColorStop(0.1, `hsl(${hue}, 61%, 33%)`);
     gradient2.addColorStop(0.25, `hsl(${hue}, 64%, 6%)`);
     gradient2.addColorStop(1, 'transparent');
@@ -135,18 +132,9 @@ const Home = () => {
         <div>
           <Trade/>
         </div>
-        {/* <div>
-          <CanvasAnimation/>
-        </div> */}
         <div>
           <Creator/>
         </div>
-        {/* <div>
-          <ArtContent/>
-        </div> */}
-        {/* <div>
-          <Newsletter/>
-        </div> */}
         <div>
           <Footer/>
         </div>

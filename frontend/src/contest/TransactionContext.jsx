@@ -63,7 +63,7 @@ export const TransactionProvider = ({ children }) => {
 
   const purchaseArt = async () => {
     try {
-      const price = await contract.price(); // Ensure price is retrieved as a BigNumber
+      const price = await contract.price(); 
       await contract.purchaseArt({ value: price });
       console.log("Art purchased successfully.");
     } catch (error) {

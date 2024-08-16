@@ -4,7 +4,6 @@ import './OrderCreation.css';
 import { addArt, getAllArts } from '../../utils/db';
 import { Link } from 'react-router-dom';
 import { ArtStatusContext } from '../../context/ArtStatusContext';
-// import { TransactionContext } from '../../context/TransactionContext'; 
 import { TransactionContext } from '../../contest/TransactionContext';
 import { ethers } from 'ethers';
 
@@ -12,7 +11,7 @@ const OrderCreation = () => {
   const { purchaseArt } = useContext(TransactionContext);
 
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isInsufficientFundsModalOpen, setIsInsufficientFundsModalOpen] = useState(false); // New state for insufficient funds modal
+  const [isInsufficientFundsModalOpen, setIsInsufficientFundsModalOpen] = useState(false); 
   const [isWalletConnected, setIsWalletConnected] = useState(false); 
   const [formData, setFormData] = useState({
     image: '',

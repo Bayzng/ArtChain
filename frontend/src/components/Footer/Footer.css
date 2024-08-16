@@ -42,7 +42,7 @@
     width: 97%;
     height: 90%;
     border-radius: 8px;
-    transition: background-position 1s; /* Combined transitions */
+    transition: background-position 1s; 
     background-color: rgba(0, 0, 0, 0.842);
     background-size: 200%;
 }
@@ -59,16 +59,16 @@
     transform: scale(0.95);
 }
 
-/* Media queries for responsiveness */
+
 @media (max-width: 768px) {
     .footerSec {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+        flex-direction: column; 
         padding: 2rem;
-        gap: 2rem; /* Adjust gap for smaller screens */
+        gap: 2rem; 
     }
 
     .Btn {
-        width: 120px; /* Adjust button size for smaller screens */
+        width: 120px; 
         height: 35px;
     }
 

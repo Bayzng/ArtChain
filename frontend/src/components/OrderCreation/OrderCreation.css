@@ -1,6 +1,6 @@
-.--orderCreation-header {
-    /* margin-top: ; */
-}
+/* .--orderCreation-header {
+    margin-top: ;
+} */
 
 .orderCreation {
     display: flex;
@@ -12,7 +12,6 @@
 .creator {
     display: flex;
     justify-content: space-around;
-    /* gap: 20px; */
 }
 
 .creator h4 {

@@ -5,8 +5,8 @@ const artSchema = new mongoose.Schema({
   title: { type: String, required: true },
   description: { type: String, required: true },
   price: { type: Number, required: true },
-  creatorName: { type: String, required: true },  // Add creator name
-  creatorImage: { type: String, required: true }  // Add creator image
+  creatorName: { type: String, required: true },  
+  creatorImage: { type: String, required: true }  
 });
 
 module.exports = mongoose.model('Art', artSchema);

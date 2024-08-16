@@ -3,11 +3,6 @@ import tradeImg from "../../assets/my.png"
 import artOne from "../../assets/artOne.avif"
 import artTwo from "../../assets/artTwo.avif"
 import artThree from "../../assets/artThree.jpeg"
-import netOne from "../../assets/arb.png"
-import netTwo from "../../assets/ava.png"
-import netThree from "../../assets/lisk.jpeg"
-import netFour from "../../assets/op.svg"
-import netFive from "../../assets/poly.webp"
 import { Link } from 'react-router-dom'
 import "./Trade.css"
 
@@ -45,16 +40,6 @@ const Trade = () => {
         </div>
         <hr />
       </div>
-        {/* <div className='network'>
-          <h1>Multiple Networks</h1>
-          <div className='networkImg'>
-            <img src={netOne} alt="" />
-            <img src={netTwo} alt="" />
-            <img src={netThree} alt="" />
-            <img src={netFour} alt="" />
-            <img src={netFive} alt="" />
-          </div>
-        </div> */}
     </div>
   )
 }

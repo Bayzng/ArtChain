@@ -2,7 +2,6 @@ import React, { useState, useEffect, useContext } from 'react';
 import { getAllArts } from '../../utils/db';
 import "./OrderConfirm.css";
 import { ArtStatusContext } from '../../context/ArtStatusContext';
-// import { BuyArtContext } from '../../context/BuyArtContext';
 import { BuyArtContext } from '../../context/BuyArtContext ';
 import { TransactionContext } from '../../contest/TransactionContext';
 import Navbar from '../Navbar/Navbar';
@@ -20,7 +19,7 @@ const OrderConfirm = () => {
     useEffect(() => {
         const fetchArts = async () => {
             try {
-                const savedArts = await getAllArts();  // Fetching arts from the updated database
+                const savedArts = await getAllArts(); 
                 setArts(savedArts);
             } catch (err) {
                 setError(err.message);
@@ -37,8 +36,7 @@ const OrderConfirm = () => {
     }, [currentAccount]);
 
     const handleConfirmPayment = (id) => {
-        setArtStatus((prevStatus) => ({ ...prevStatus, [id]: 'bought' })); // Updating art status locally
-        // Here, you could also send a request to your backend to update the art status in the database
+        setArtStatus((prevStatus) => ({ ...prevStatus, [id]: 'bought' })); 
     };
 
     if (loading) return <p>Loading...</p>;

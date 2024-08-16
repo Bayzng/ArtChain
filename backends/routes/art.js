@@ -2,7 +2,7 @@ const express = require('express');
 const Art = require('../models/Art');
 const router = express.Router();
 
-// Get all arts
+
 router.get('/', async (req, res) => {
   try {
     const arts = await Art.find();
@@ -12,23 +12,22 @@ router.get('/', async (req, res) => {
   }
 });
 
-// Add new art
+
 router.post('/', async (req, res) => {
   try {
-    // Extract the image and creatorImage from the request body
+    
     const { image, creatorImage, title, description, price, creatorName } = req.body;
 
-    // Create new Art object with base64 encoded images
     const art = new Art({
-      image: image, // Assuming image is sent as a base64 string
+      image: image, 
       title: title,
       description: description,
       price: price,
       creatorName: creatorName,
-      creatorImage: creatorImage // Assuming creatorImage is sent as a base64 string
+      creatorImage: creatorImage 
     });
 
-    // Save the art object to MongoDB
+    
     const newArt = await art.save();
     res.status(201).json(newArt);
   } catch (err) {
